@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         showRecyclerView()
 
         binding.buttonWatched.setOnClickListener{
-
             val intent = Intent(this, WatchedMoviesActivity::class.java)
             startActivity(intent)
         }
