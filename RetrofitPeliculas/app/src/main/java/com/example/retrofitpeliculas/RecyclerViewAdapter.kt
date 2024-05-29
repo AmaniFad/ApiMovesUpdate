@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import android.content.Intent
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
+import android.view.animation.ScaleAnimation
 import com.example.retrofitpeliculas.data.model.Result
 
 class RecyclerViewAdapter(var films : List<Result>) : RecyclerView.Adapter<MoviesViewHolder>() {
@@ -31,6 +32,7 @@ class RecyclerViewAdapter(var films : List<Result>) : RecyclerView.Adapter<Movie
 
             fadeOut.setAnimationListener(object : Animation.AnimationListener {
                 override fun onAnimationStart(animation: Animation?) {
+
                 }
 
                 override fun onAnimationEnd(animation: Animation?) {
